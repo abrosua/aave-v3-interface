@@ -10,5 +10,5 @@ Steps:
 4. Repay everything back
 
 Testing method:
-1. Integration test: `sepolia`
+1. Integration test: `sepolia` testnet
 2. Unit test: `mainnet-fork` (since we do NOT deploy our own contract and oracle usage is NOT required, just fork Aave's contracts from the Ethereum mainnet)
