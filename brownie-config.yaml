@@ -1,0 +1,23 @@
+dependencies:
+  - aave/aave-v3-core@1.18.0
+compiler:
+  solc:
+    remappings:
+      - '@aave=aave/aave-v3-core@1.18.0'
+dotenv: .env
+networks:
+  default: mainnet-fork
+  mainnet-fork:
+    dai_token: '0x6b175474e89094c44da98b954eedeac495271d0f'
+    dai_usd_price_feed: '0xaed0c38402a5d19df6e4c03f4e2dced6e29c1ee9'
+    pool_proxy: '0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2'
+    verify: false
+    weth_token: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2'
+  sepolia:
+    dai_token: '0x68194a729C2450ad26072b3D33ADaCbcef39D574'
+    dai_usd_price_feed: '0x14866185B1962B63C3Ea9E03Bc1da838bab34C19'
+    pool_proxy: '0xE7EC1B0015eb2ADEedb1B7f9F1Ce82F9DAD6dF08'
+    verify: true
+    weth_token: '0xD0dF82dE051244f04BfF3A8bB1f62E1cD39eED92'
+wallets:
+  key_playground: ${PRIVATE_KEY_PLAYGROUND}
